@@ -1,0 +1,24 @@
+#header-component{
+    width: 100%;
+}
+
+#div-logo{
+    display: flex;
+    justify-content: center;
+}
+
+#div-pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+
+    & a{
+        text-decoration: none;
+        color: #264E34;
+    }
+}
+
+#active-tab{
+    border-bottom: 1px solid #009F7F;
+}

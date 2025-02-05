@@ -1,0 +1,14 @@
+<div class="row" id="header-component">
+  <div class="col-6" id="div-logo">
+    <a href="/">
+      <img src="assets/logo.png" />
+    </a>
+  </div>
+  <div class="col-6" id="div-pages">
+    <span *ngFor="let tab of tabs">
+      <a [href]="tab.path" [id]="tab.isActive ? 'active-tab' : 'tab'">{{
+        tab.name
+      }}</a>
+    </span>
+  </div>
+</div>

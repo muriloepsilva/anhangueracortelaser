@@ -51,8 +51,6 @@ export class HeaderComponent implements OnInit {
   }
 
   verifyActiveRoute(currentPage: string) {
-    console.log(currentPage);
     this.tabs.forEach((tab) => (tab.isActive = tab.path === currentPage));
-    console.log(this.tabs);
   }
 }

@@ -1,1 +1,71 @@
-<p>home works!</p>
+<div id="home-page">
+  <div id="impact-title">
+    <div id="title">
+      <span>Transformamos ideias em projetos duradouros</span>
+    </div>
+    <div id="subtitle">
+      <span>
+        Com precisão, inovação e sustentabilidade, entregamos soluções que
+        resistem ao tempo.
+      </span>
+    </div>
+  </div>
+
+  <div id="services">
+    <span id="title">Nossos Serviços</span>
+    <div class="row d-flex justify-content-center mt-3">
+      <div
+        class="col-lg-2 col-md-4 col-sm-6 col-12"
+        *ngFor="let card of servicesCards"
+      >
+        <app-card [image]="card.image" [title]="card.title"></app-card>
+      </div>
+    </div>
+  </div>
+
+  <div class="row align-items-center justify-content-center w-100">
+    <div class="col-lg-6 col-md-8 col-sm-10 col-12" id="quotation">
+      <span id="title">
+        Precisa de soluções que combinam tecnologia e qualidade?
+      </span>
+      <span id="subtitle"> Solicite um orçamento personalizado </span>
+      <button id="quotation-order">Clique aqui</button>
+    </div>
+  </div>
+
+  <div id="about-us">
+    <span id="title">Sobre Nós</span>
+    <div class="row">
+      <span id="text">
+        A Anhanguera Corte Laser foi fundada em 2013 com o objetivo de atender
+        pequenos e médios empresários, além de pessoas físicas que enfrentavam
+        dificuldades para concretizar seus projetos devido às exigências de
+        lotes mínimos no mercado. Com um atendimento personalizado e foco na
+        qualidade, a empresa rapidamente se tornou referência em corte e dobra
+        de chapas na região de Campinas. Em 2021, investiu em um sistema
+        fotovoltaico, reduzindo custos operacionais e tornando seus serviços
+        ainda mais acessíveis.<br /><br />
+
+        Atendendo diversos setores, como indústrias automotiva, farmacêutica,
+        alimentícia e agronegócio, além de trabalhar em parceria com arquitetos,
+        paisagistas e designers de interiores, a Anhanguera transforma ideias em
+        produtos de alta qualidade. Seu time especializado acompanha os clientes
+        desde o desenvolvimento do projeto até a produção final, garantindo
+        soluções precisas, inovadoras e com a rapidez necessária para cada
+        demanda.
+      </span>
+    </div>
+  </div>
+
+  <div id="sectors">
+    <span id="title">Nossos Serviços</span>
+    <div class="row d-flex justify-content-center mt-3">
+      <div
+        class="col-lg-2 col-md-4 col-sm-6 col-12"
+        *ngFor="let card of sectorsCards"
+      >
+        <app-card [image]="card.image" [title]="card.title"></app-card>
+      </div>
+    </div>
+  </div>
+</div>

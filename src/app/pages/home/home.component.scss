@@ -1,0 +1,73 @@
+#home-page{
+    margin-top: 130px;
+    width: 100%;
+}
+
+#impact-title{
+    background-image: url('../../../assets/impact-title-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+    color: #FFF;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    & #title{
+        width: 50%;
+        font-size: 30px;
+        border-bottom: 1px solid #009F7F;
+    }
+}
+
+#services{
+    padding: 20px;
+
+    & #title{
+        font-size: 25px;
+        color: #264E34;
+        border-bottom: 1px solid #009F7F;
+    }
+}
+
+#quotation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #009F7F;
+    border-radius: 10px;
+    padding: 10px;
+    color: #FFF;
+
+    & #quotation-order{
+        background-color: #264E34;
+        color: #FFF;
+        border: none;
+        padding: 8px;
+        border-radius: 10px;
+        width: 30%;
+    }
+}
+
+#about-us{
+    padding: 20px;
+    color: #264E34;
+
+    & #title{
+        font-size: 25px;
+        color: #264E34;
+        border-bottom: 1px solid #009F7F;
+    }
+}
+
+#sectors{
+    padding: 20px;
+
+    & #title{
+        font-size: 25px;
+        color: #264E34;
+        border-bottom: 1px solid #009F7F;
+    }
+}

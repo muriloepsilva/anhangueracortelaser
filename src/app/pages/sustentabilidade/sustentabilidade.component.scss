@@ -1,0 +1,51 @@
+#impact-title{
+    background-image: url('../../../assets/sustainability.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+    color: #264E34;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    & #title{
+        width: 50%;
+        font-size: 30px;
+        border-bottom: 1px solid #009F7F;
+    }
+}
+
+#content{
+    padding: 20px;
+    color: #264E34;
+}
+
+#card{
+    width: 70%;
+    font-size: 20px;
+    background-color: #009F7F;
+    color: #ffffff;
+    border-radius: 10px;
+
+    & #title{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    & #text{
+        width: 100%;
+        text-align: center;
+    }
+
+    & #energia-img, #impacto-img{
+        width: 80%;
+        border-radius: 0 10px 10px 0;
+    }
+
+    & #reaproveitamento-img{
+        width: 80%;
+        border-radius: 10px 0px 0 0px;
+    }
+}
+

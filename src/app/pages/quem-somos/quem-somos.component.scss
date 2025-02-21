@@ -1,0 +1,80 @@
+#impact-title{
+    background-image: url('../../../assets/impact-title-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+    color: #FFF;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    & #title{
+        width: 10%;
+        font-size: 20px;
+        border-bottom: 1px solid #009F7F;
+    }
+}
+
+#quem-somos{
+    width: 100%;
+    padding: 10px;
+
+    & #title{
+        border-bottom: 1px solid #009F7F;
+        font-size: 20px;
+    }
+
+    & .row{
+        width: 100%;
+        padding: 20px
+    }
+    
+}
+
+#missao{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #009F7F;
+    color: #FFFFFF;
+}
+
+#valores{
+    padding: 10px;
+    & #title{
+        width: 10%;
+        font-size: 20px;
+        border-bottom: 1px solid #009F7F;
+    }
+}
+
+#card{
+    
+    & #card-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #264E34;
+        width: 100%;
+        border: none;
+        color: #FFFFFF;
+        padding: 10px;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    & #card-body{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: #009F7F;
+        color: #FFFFFF;
+        padding: 10px;
+        border-radius: 0px 0px 20px 20px;
+    }
+}

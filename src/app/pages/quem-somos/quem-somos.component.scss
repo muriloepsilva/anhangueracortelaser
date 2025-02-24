@@ -1,4 +1,5 @@
 #impact-title{
+    width: 100%;
     background-image: url('../../../assets/impact-title-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,7 +45,9 @@
 }
 
 #valores{
+    width: 99%;
     padding: 10px;
+
     & #title{
         width: 10%;
         font-size: 20px;
@@ -53,7 +56,6 @@
 }
 
 #card{
-    
     & #card-title{
         display: flex;
         justify-content: center;

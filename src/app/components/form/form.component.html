@@ -1,0 +1,85 @@
+<form
+  id="form"
+  (ngSubmit)="submitForm()"
+  #userForm="ngForm"
+  class="container mt-4"
+>
+  <div class="row">
+    <div class="col-md-4 d-flex justify-content-center align-items-center">
+      <input
+        id="name-input"
+        class="form-control"
+        name="name"
+        type="text"
+        [(ngModel)]="formData.from_name"
+        required
+        placeholder="Nome:"
+      />
+    </div>
+    <div class="col-md-4 d-flex justify-content-center align-items-center">
+      <input
+        id="phone-input"
+        class="form-control"
+        name="phone"
+        type="text"
+        [(ngModel)]="formData.from_phone"
+        (input)="applyPhoneMask($event)"
+        maxlength="15"
+        required
+        placeholder="Telefone:"
+      />
+    </div>
+    <div class="col-md-4 d-flex justify-content-center align-items-center">
+      <input
+        id="email-input"
+        class="form-control"
+        name="email"
+        type="email"
+        [(ngModel)]="formData.from_email"
+        required
+        placeholder="Email:"
+      />
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-12 d-flex justify-content-center align-items-center">
+      <input
+        id="subject-input"
+        class="form-control"
+        name="subject"
+        type="text"
+        [(ngModel)]="formData.subject"
+        required
+        placeholder="Assunto:"
+      />
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-12 d-flex justify-content-center align-items-center">
+      <textarea
+        id="message-input"
+        class="form-control"
+        name="message"
+        [(ngModel)]="formData.message"
+        required
+        placeholder="Mensagem:"
+        rows="4"
+      ></textarea>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-12 text-center">
+      <button
+        id="send-btn"
+        class="btn btn-success px-4 py-2"
+        type="submit"
+        [disabled]="!userForm.valid"
+      >
+        Enviar
+      </button>
+    </div>
+  </div>
+</form>

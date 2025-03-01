@@ -21,31 +21,13 @@
     color: #264E34;
 }
 
-#card{
-    width: 70%;
-    font-size: 20px;
+#card {
     background-color: #009F7F;
     color: #ffffff;
-    border-radius: 10px;
-
-    & #title{
-        font-size: 25px;
-        text-align: center;
-    }
-
-    & #text{
-        width: 100%;
-        text-align: center;
-    }
-
-    & #energia-img, #impacto-img{
-        width: 80%;
-        border-radius: 0 10px 10px 0;
-    }
-
-    & #reaproveitamento-img{
-        width: 80%;
-        border-radius: 10px 0px 0 0px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+    & #title {
+      font-size: 20px;
     }
 }
-

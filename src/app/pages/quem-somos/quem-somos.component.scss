@@ -1,4 +1,4 @@
-#impact-title{
+#impact-title {
     width: 100%;
     background-image: url('../../../assets/impact-title-bg.png');
     background-repeat: no-repeat;
@@ -9,74 +9,172 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-
-    & #title{
-        width: 10%;
-        font-size: 20px;
-        border-bottom: 1px solid #009F7F;
+  
+    & #title {
+      width: 10%;
+      font-size: 20px;
+      border-bottom: 1px solid #009F7F;
+      text-align: left; 
     }
-}
-
-#quem-somos{
+  }
+  
+  // Seção "Quem Somos"
+  #quem-somos {
     width: 100%;
-    padding: 10px;
-
-    & #title{
-        border-bottom: 1px solid #009F7F;
-        font-size: 20px;
+    padding: 20px;
+  
+    & #title {
+      border-bottom: 1px solid #009F7F;
+      font-size: 20px;
+      text-align: left; // Mantendo alinhamento original
     }
-
-    & .row{
-        width: 100%;
-        padding: 20px
+  
+    & .row {
+      width: 100%;
+      padding: 20px;
     }
-    
-}
-
-#missao{
+  }
+  
+  // Seção "Missão"
+  #missao {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #009F7F;
     color: #FFFFFF;
-}
-
-#valores{
-    width: 99%;
-    padding: 10px;
-
-    & #title{
-        width: 10%;
+    text-align: center;
+  }
+  
+  // Seção "Valores"
+  #valores {
+    width: 100%;
+    padding: 20px;
+  
+    & #title {
+      width: 10%;
+      font-size: 20px;
+      border-bottom: 1px solid #009F7F;
+      text-align: left; // Mantendo alinhamento original
+    }
+  
+    .row {
+      justify-content: start; // Mantendo alinhado à esquerda
+    }
+  }
+  
+  // Estilização dos Cards
+  #card {
+    width: 100%;
+    max-width: 200px; // Mantém um tamanho padrão no desktop
+  
+    & #card-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #264E34;
+      width: 100%;
+      border: none;
+      color: #FFFFFF;
+      padding: 10px;
+      border-radius: 20px 20px 0px 0px;
+    }
+  
+    & #card-body {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      background-color: #009F7F;
+      color: #FFFFFF;
+      padding: 10px;
+      border-radius: 0px 0px 20px 20px;
+    }
+  }
+  
+  /* ======= RESPONSIVIDADE ======= */
+  @media (max-width: 1024px) {
+    #impact-title {
+      height: 240px;
+  
+      & #title {
+        font-size: 22px;
+      }
+    }
+  
+    #valores .row {
+      flex-wrap: wrap;
+    }
+  
+    #card {
+      max-width: 160px; // Ajuste nos tablets
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #impact-title {
+      height: 220px;
+      padding: 15px;
+  
+      & #title {
         font-size: 20px;
-        border-bottom: 1px solid #009F7F;
+        width: 100%; // Evita que fique pequeno no mobile
+        border: none
+      }
     }
-}
-
-#card{
-    & #card-title{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: #264E34;
-        width: 100%;
-        border: none;
-        color: #FFFFFF;
-        padding: 10px;
-        border-radius: 20px 20px 0px 0px;
+  
+    #quem-somos,
+    #missao {
+      padding: 15px;
     }
-
-    & #card-body{
-        height: 100px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        background-color: #009F7F;
-        color: #FFFFFF;
-        padding: 10px;
-        border-radius: 0px 0px 20px 20px;
+  
+    #quem-somos .row {
+      padding: 10px;
     }
-}
+  
+    #valores .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start; // Mantém alinhamento à esquerda no mobile
+      gap: 10px;
+    }
+  
+    #card {
+      width: 100%;
+      max-width: 100%; // Ocupa toda a largura no mobile
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #impact-title {
+      height: 200px;
+      padding: 10px;
+  
+      & #title {
+        font-size: 18px;
+        text-align: left; // Mantendo alinhamento original no mobile
+      }
+    }
+  
+    #quem-somos,
+    #missao {
+      padding: 10px;
+    }
+  
+    #quem-somos .row {
+      padding: 5px;
+    }
+  
+    #valores {
+      padding: 10px;
+    }
+  
+    #card {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  

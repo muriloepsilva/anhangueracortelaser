@@ -7,7 +7,10 @@
 
   <!-- Verifica se é mobile para exibir o menu sanduíche -->
   <div class="col-6" id="div-menu" *ngIf="isMobile">
-    <button id="menu-button" (click)="toggleMenu()">☰</button>
+    <button id="menu-button" (click)="toggleMenu()">
+      <span class="material-icons">{{ menuOpen ? "close" : "menu" }}</span>
+    </button>
+
     <div id="menu-dropdown" *ngIf="menuOpen">
       <span *ngFor="let tab of tabs">
         <a [href]="tab.path" [id]="tab.isActive ? 'active-tab' : 'tab'">

@@ -4,11 +4,25 @@
       <img src="assets/logo.png" />
     </a>
   </div>
-  <div class="col-6" id="div-pages">
+
+  <!-- Verifica se é mobile para exibir o menu sanduíche -->
+  <div class="col-6" id="div-menu" *ngIf="isMobile">
+    <button id="menu-button" (click)="toggleMenu()">☰</button>
+    <div id="menu-dropdown" *ngIf="menuOpen">
+      <span *ngFor="let tab of tabs">
+        <a [href]="tab.path" [id]="tab.isActive ? 'active-tab' : 'tab'">
+          {{ tab.name }}
+        </a>
+      </span>
+    </div>
+  </div>
+
+  <!-- Caso não seja mobile, mantém o menu normal -->
+  <div class="col-6" id="div-pages" *ngIf="!isMobile">
     <span *ngFor="let tab of tabs">
-      <a [href]="tab.path" [id]="tab.isActive ? 'active-tab' : 'tab'">{{
-        tab.name
-      }}</a>
+      <a [href]="tab.path" [id]="tab.isActive ? 'active-tab' : 'tab'">
+        {{ tab.name }}
+      </a>
     </span>
   </div>
 </div>

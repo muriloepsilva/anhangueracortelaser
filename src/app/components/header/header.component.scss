@@ -1,21 +1,79 @@
-#div-logo{
+#div-logo {
     display: flex;
     justify-content: center;
-}
-
-#div-pages{
+    align-items: center;
+  }
+  
+  #div-pages {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2%;
-
-    & a{
-        text-decoration: none;
-        color: #264E34;
-        cursor: pointer;
+  
+    a {
+      text-decoration: none;
+      color: #264e34;
+      cursor: pointer;
+      font-size: 16px;
     }
-}
-
-#active-tab{
-    border-bottom: 1px solid #009F7F;
-}
+  }
+  
+  #active-tab {
+    border-bottom: 2px solid #009f7f;
+  }
+  
+  @media (max-width: 768px) {
+    #header-component {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px 15px;
+    }
+  
+    #div-logo {
+      justify-content: flex-start;
+      img {
+        width: 120px; // Reduzindo ainda mais para telas menores
+      }
+    }
+  
+    #div-menu {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+    #menu-button {
+      background: none;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+      padding: 5px 10px;
+    }
+  
+    #menu-dropdown {
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+    }
+  
+    #menu-dropdown a {
+      text-decoration: none;
+      padding: 12px;
+      display: block;
+      color: #264e34;
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    #menu-dropdown a:hover {
+      background: #f0f0f0;
+    }
+  }

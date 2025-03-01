@@ -1,0 +1,74 @@
+#impact-title{
+    background-image: url('../../../assets/steel-pipes-put-together.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 280px;
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    & #title{
+        width: 10%;
+        font-size: 30px;
+        border-bottom: 1px solid #009F7F;
+    }
+}
+
+#body{
+    padding: 10px;
+
+    & p{
+        color: #264E34;
+    }
+}
+
+#card{
+    background-color: #FFF;
+    padding: 0;
+    text-align: center;
+    border-radius: 10px;
+    
+    & #card-title{
+        padding: 5px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #009F7F;
+    }
+
+    & img{
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+
+    }
+
+    & #card-body{
+        padding: 10px;
+    }
+}
+
+#card:hover{
+    & #card-title{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #264E34;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+#cards{
+    width: 100%;
+}
+
+#setores-atendidos{
+    padding: 20px;
+
+    & #title{
+        font-size: 25px;
+        color: #264E34;
+        border-bottom: 1px solid #009F7F;
+    }
+}

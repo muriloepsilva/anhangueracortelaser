@@ -8,15 +8,15 @@ import { GoogleMap, MapMarker } from '@angular/google-maps';
   styleUrl: './contato.component.scss',
 })
 export class ContatoComponent {
-  center = { lat: -22.878952795786375, lng: -47.11978834110448 }; // Localização inicial (São Paulo)
+  center = { lat: -22.878952795786375, lng: -47.11978834110448 };
   zoom = 19;
 
-  markerPosition = { lat: -22.878952795786375, lng: -47.11978834110448 }; // Posição do marcador
+  markerPosition = { lat: -22.878952795786375, lng: -47.11978834110448 };
   markerOptions = {
     animation: google.maps.Animation.DROP,
     icon: {
-      url: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png', // Ícone azul
-      scaledSize: new google.maps.Size(40, 40), // Ajustar o tamanho
+      url: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png',
+      scaledSize: new google.maps.Size(40, 40),
     },
   };
 }

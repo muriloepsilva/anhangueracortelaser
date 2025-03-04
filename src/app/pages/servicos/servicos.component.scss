@@ -14,6 +14,12 @@
         font-size: 30px;
         border-bottom: 1px solid #009F7F;
     }
+
+    @media (max-width: 768px){
+        #title{
+            border-bottom: none;
+        }
+    }
 }
 
 #body{
@@ -24,44 +30,50 @@
     }
 }
 
-#card{
+#card {
     background-color: #FFF;
     padding: 0;
     text-align: center;
     border-radius: 10px;
-    
-    & #card-title{
-        padding: 5px;
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-        background-color: #009F7F;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  
+    & #card-title {
+      padding: 5px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: #009F7F;
     }
-
-    & img{
-        width: 100%;
-        border-radius: 10px 10px 0px 0px;
-
+  
+    & img {
+      width: 100%;
+      border-radius: 10px 10px 0px 0px;
     }
-
-    & #card-body{
-        padding: 10px;
+  
+    & #card-body {
+      padding: 10px;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-}
-
-#card:hover{
-    & #card-title{
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-        background-color: #264E34;
-        transition: all 0.3s ease-in-out;
+  }
+  
+  #card:hover {
+    & #card-title {
+      background-color: #264E34;
+      transition: all 0.3s ease-in-out;
     }
-}
-
-#cards{
+  }
+  
+  #cards {
     width: 100%;
-}
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
 
 #setores-atendidos{
     padding: 20px;

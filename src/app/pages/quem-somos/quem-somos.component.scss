@@ -16,6 +16,12 @@
       border-bottom: 1px solid #009F7F;
       text-align: left; 
     }
+
+    @media (max-width: 768px){
+      #title{
+          border-bottom: none;
+      }
+  }
   }
   
   // Seção "Quem Somos"

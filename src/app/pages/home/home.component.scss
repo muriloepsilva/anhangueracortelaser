@@ -1,70 +1,167 @@
-#impact-title{
+#impact-title {
     background-image: url('../../../assets/impact-title-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 280px;
     color: #FFF;
     padding: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-
-    & #title{
-        width: 50%;
-        font-size: 30px;
-        border-bottom: 1px solid #009F7F;
+  
+    & #title {
+      width: 50%;
+      font-size: 30px;
+      border-bottom: 1px solid #009F7F;
     }
-}
-
-#services{
+  
+    @media (max-width: 768px) {
+      height: 220px;
+      padding: 15px;
+  
+      & #title {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      height: 180px;
+      padding: 10px;
+  
+      & #title {
+        font-size: 20px;
+      }
+    }
+  }
+  
+  // Serviços e setores
+  #services,
+  #sectors {
     padding: 20px;
-
-    & #title{
-        font-size: 25px;
-        color: #264E34;
-        border-bottom: 1px solid #009F7F;
+  
+    & #title {
+      font-size: 25px;
+      color: #264E34;
+      border-bottom: 1px solid #009F7F;
+      text-align: center;
     }
-}
-
-#quotation{
+  
+    .row {
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+  
+  // Orçamento
+  #quotation {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #009F7F;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     color: #FFF;
-
-    & #quotation-order{
-        background-color: #264E34;
-        color: #FFF;
-        border: none;
-        padding: 8px;
-        border-radius: 10px;
-        width: 30%;
-        text-decoration: none;
-        text-align: center;
+    text-align: center;
+    width: 100%; // Garante que ele ocupe a largura correta no flexbox
+    max-width: 600px; // Evita que ele fique muito largo no desktop
+    margin: 0 auto; // Centraliza completamente
+  
+    & #title {
+      font-size: 18px;
+      font-weight: bold;
     }
-}
-
-#about-us{
+  
+    & #subtitle {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+  
+    & #quotation-order {
+      background-color: #264E34;
+      color: #FFF;
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+      width: 50%;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  
+    // **Responsividade**
+    @media (max-width: 1024px) {
+      max-width: 500px;
+    }
+  
+    @media (max-width: 768px) {
+      max-width: 80%; // Evita que ele grude nas laterais
+      padding: 15px;
+  
+      & #quotation-order {
+        width: 70%;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      max-width: 90%; // Evita que fique colado na lateral no mobile
+      padding: 15px;
+  
+      & #quotation-order {
+        width: 80%;
+      }
+    }
+  }
+  
+  // Sobre Nós
+  #about-us {
     padding: 20px;
     color: #264E34;
-
-    & #title{
-        font-size: 25px;
-        color: #264E34;
-        border-bottom: 1px solid #009F7F;
+  
+    & #title {
+      font-size: 25px;
+      color: #264E34;
+      border-bottom: 1px solid #009F7F;
+      text-align: center;
     }
-}
-
-#sectors{
-    padding: 20px;
-
-    & #title{
-        font-size: 25px;
-        color: #264E34;
-        border-bottom: 1px solid #009F7F;
+  
+    .row {
+      text-align: justify;
+      max-width: 800px;
+      margin: 0 auto;
     }
-}
+  
+    @media (max-width: 768px) {
+      padding: 15px;
+    }
+  
+    @media (max-width: 480px) {
+      padding: 10px;
+    }
+  }
+  
+  // Responsividade para os cards de serviços e setores
+  .row {
+    justify-content: center;
+  }
+  
+  .col-lg-2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media (max-width: 1024px) {
+    .col-lg-2 {
+      flex: 1 1 45%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .col-lg-2 {
+      flex: 1 1 100%;
+    }
+  }

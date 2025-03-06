@@ -1,0 +1,74 @@
+<div id="home-page">
+  <!-- Seção Principal -->
+  <div id="hero-section">
+    <div class="hero-content">
+      <h1>TRANSFORMANDO METAL EM SOLUÇÕES SOB MEDIDA PARA O SEU PROJETO!</h1>
+      <p>
+        Seja para projetos industriais, arquitetônicos ou personalizados,
+        oferecemos serviços completos para o tratamento e transformação do metal
+        com tecnologia de ponta e alta precisão.
+      </p>
+      <div class="cta-container">
+        <a href="https://wa.me/551932452717" class="btn-cta">
+          SOLICITE UM ORÇAMENTO
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seção de Garantias -->
+  <div id="guarantees">
+    <h2>GARANTIMOS:</h2>
+    <div class="guarantee-boxes">
+      <div class="guarantee-card">
+        Alta qualidade em cada etapa do processo.
+      </div>
+      <div class="guarantee-card">Prazos ágeis, alinhados à sua demanda.</div>
+      <div class="guarantee-card">
+        Atendimento ágil, com soluções personalizadas.
+      </div>
+    </div>
+    <div class="cta-container">
+      <a href="https://wa.me/551932452717" class="btn-cta">
+        SOLICITE UM PROJETO PERSONALIZADO
+      </a>
+    </div>
+  </div>
+
+  <!-- Seção de Serviços -->
+  <div id="services">
+    <h2>CONHEÇA NOSSOS SERVIÇOS:</h2>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" *ngFor="let service of services">
+        <div class="service-card">
+          <div class="service-image">
+            <img [src]="service.image" class="service-img" />
+          </div>
+          <div class="service-content">
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-container">
+      <a href="https://wa.me/551932452717" class="btn-cta">
+        PEÇA SEU ORÇAMENTO AGORA
+      </a>
+    </div>
+  </div>
+
+  <!-- Seção de Contato -->
+  <div id="contact-section">
+    <p>Dé vida ao seu projeto com precisão e eficiência!</p>
+    <p>Entre em contato agora mesmo!</p>
+    <p class="phone-number">(19) 3245-2717</p>
+    <div class="cta-container">
+      <a href="https://wa.me/551932452717" class="btn-cta">
+        ENTRE EM CONTATO AGORA
+      </a>
+    </div>
+  </div>
+</div>

@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
     { name: 'Serviços', path: '/servicos', isActive: false },
     { name: 'Sustentabilidade', path: '/sustentabilidade', isActive: false },
     { name: 'Contato', path: '/contato', isActive: false },
+    { name: 'Projetos', path: '/solicite-projeto', isActive: false },
   ];
 
   constructor(private router: Router) {}

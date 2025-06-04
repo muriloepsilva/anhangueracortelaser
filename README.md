@@ -44,4 +44,4 @@ First run the build in production mode, running:
 npm run build --prod
 ```
 
-Commit the changes in the master branch and call the repo owner to do the deploy
+Commit the changes, open a pull request to master branch

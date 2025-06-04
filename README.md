@@ -44,8 +44,4 @@ First run the build in production mode, running:
 npm run build --prod
 ```
 
-After build the application, run:
-```bash
-firebase deploy
-```
-
+Commit the changes in the master branch and call the repo owner to do the deploy

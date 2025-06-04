@@ -2,46 +2,8 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
 
-## Development server
+1. Crie uma branch a partir da master
+2. Faça o commit com as alterações
+3. Abra um pull request para a master
 
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Firebase deploy
-
-First run the build in production mode, running:
-
-```bash
-npm run build --prod
-```
-
-Commit the changes, open a pull request to master branch
+Me chame no whatsapp (19) 9 9629-5761 para eu aprovar a alteração e rodar os comandos para subir no firebase
